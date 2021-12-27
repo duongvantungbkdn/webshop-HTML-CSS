@@ -1,0 +1,38 @@
+/* -----footer--------------- */
+/* --------------header----------------- */
+.footer {
+    height: var(--footer-height);
+    background-image: linear-gradient(0, #f53e2d, #ff6533); 
+}
+
+.footer__row-1 {
+    text-align: left;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__label {
+    margin: 12px 0;
+}
+
+.footer__label h4 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #DDD;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item {
+    margin: 8px 0;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #DDD;
+}

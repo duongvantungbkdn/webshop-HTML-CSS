@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-icon/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.jss"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <!-- header: navbar -->
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--separate header_item--hover">
+                            <span>Vào cửa hàng trên ứng dụng</span>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <span class="header__navbar-item--no-hover">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link header_item--hover">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link header_item--hover">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-icon-link header_item--hover">
+                                <i class="header__home-icon fas fa-home"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-link--notification header__navbar-item--separate">
+                            <a href="" class="header__navbar-item-link header_item--hover">
+                                <i class="far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="dropdown-list header__navbar-notification">
+                                <!-- no login: add class="header__navbar-notification--noLogin" -->
+                                <div class="header__navbar-notification-wrap--noLogin">
+                                    <img src="./assets/img/no-login.png" alt="no login" class="header__navbar-notification-img--noLogin">
+                                    <span class="header__navbar-notification-message--noLogin">Bạn chưa đăng nhập</span>
+                                    <button class="btn btn-login">Đăng nhập</button>
+                                    <button class="btn btn-login">Đăng ký</button>
+                                    <button class="btn btn-login">Thoát</button>
+                                </div>
+                                <!-- logged in -->
+                                <div class="header__navbar-notification-wrap--loggedIn">
+                                    <div class="header__navbar-notification-headding">
+                                        <h3 class="header__navbar-notification-headding-content">Thông báo mới nhận</h3>
+                                        <i class="fas fa-times hide-on-pc"></i>
+                                    </div>     
+                                    <ul class="header__navbar-notification-list">
+                                        <li class="header__navbar-notification-item">
+                                            <a href="/" class="header__navbar-notification-link">
+                                                <img src="./assets/img/my-pham-1.jfif" alt="" class="header__navbar-notification-img">
+                                                <div class="header__navbar-notification-info">
+                                                    <h4 class="header__navbar-notification-name">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</h4>
+                                                    <span class="header__navbar-notification-description">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-notification-item">
+                                            <a href="/" class="header__navbar-notification-link">
+                                                <img src="./assets/img/my-pham-2.png" alt="" class="header__navbar-notification-img">
+                                                <div class="header__navbar-notification-info">
+                                                    <h4 class="header__navbar-notification-name">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</h4>
+                                                    <span class="header__navbar-notification-description">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-notification-item">
+                                            <a href="/" class="header__navbar-notification-link">
+                                                <img src="./assets/img/my-pham-3.jpg" alt="" class="header__navbar-notification-img">
+                                                <div class="header__navbar-notification-info">
+                                                    <h4 class="header__navbar-notification-name">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</h4>
+                                                    <span class="header__navbar-notification-description">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-notification-item">
+                                            <a href="/" class="header__navbar-notification-link">
+                                                <img src="./assets/img/my-pham-4.jpg" alt="" class="header__navbar-notification-img">
+                                                <div class="header__navbar-notification-info">
+                                                    <h4 class="header__navbar-notification-name">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</h4>
+                                                    <span class="header__navbar-notification-description">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-notification-item">
+                                            <a href="/" class="header__navbar-notification-link">
+                                                <img src="./assets/img/my-pham-5.jpg" alt="" class="header__navbar-notification-img">
+                                                <div class="header__navbar-notification-info">
+                                                    <h4 class="header__navbar-notification-name">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</h4>
+                                                    <span class="header__navbar-notification-description">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__navbar-notification-item">
+                                            <a href="/" class="header__navbar-notification-link">
+                                                <img src="./assets/img/my-pham-1.jpg" alt="" class="header__navbar-notification-img">
+                                                <div class="header__navbar-notification-info">
+                                                    <h4 class="header__navbar-notification-name">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</h4>
+                                                    <span class="header__navbar-notification-description">Mỹ phẩm OHUI chính hãng Mỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãngMỹ phẩm OHUI chính hãng</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <a href="" class="header__navbar-item-link header_item--hover">
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--bold header__navbar-item--separate header_item--hover">Đăng ký</li> 
+                        <li class="header__navbar-item header__navbar-item--bold header_item--hover">Đăng nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-user">
+                            <img src="./assets/img/google.jpg" alt="user-avatar" class="header__navbar-user-avatar">
+                            <span class="header__navbar-user-name">Dương Tùng</span>
+                            <div class="dropdown-list header__navbar-user--dropdown">
+                                <ul class="header__navbar-user-list">
+                                    <li class="header__navbar-user-item">
+                                        <a href="" class="header__navbar-user-content">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="" class="header__navbar-user-content">Địa chỉ của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="" class="header__navbar-user-content">Đơn hàng của tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="" class="header__navbar-user-content">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> -->
+                    </ul>    
+                </nav> 
+    
+                <!-- header: logo search cart -->
+                <div class="row header__logo-search-cart">                    
+                    <div class="col pcw-2 pc-2-4 tb-0 mb-0">
+                        <!-- --------------logo on PC-------------------- -->
+                        <a href="/" style="text-decoration: none; display: block;">
+                            <svg class="header__logo-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.997 511.997" style="enable-background: new 0 0 511.997 511.997;" xml:space="preserve">
+                                <g>
+                                    <path style="fill: #ffc61b;" d="M458.26,469.518H123.382c-21.466,0-42.087-10.164-55.163-27.19l-57.619-75.029 c-1.944-2.531-2.989-5.636-2.97-8.825l0.329-57.017c0.046-7.909,6.526-14.307,14.392-14.271c17.05,0.044,41.489,0.122,61.077,0.24 c8.656,0.052,15.987,0.111,21.171,0.174c11.034,0.135,14,0.171,18.239,4.408l84.467,84.467c4.728,4.728,11.014,7.332,17.7,7.332 c6.686,0,12.972-2.604,17.699-7.331l0.155-0.155c9.731-9.731,9.731-25.611-0.029-35.371l-78.995-77.732 c-9.47-9.317-22.002-14.449-35.288-14.449H14.354C6.426,248.768,0,242.34,0,234.414s6.426-14.354,14.354-14.354h114.192	c20.867,0,40.551,8.06,55.424,22.696l79.077,77.814c21.035,21.034,21.035,55.127,0.083,76.081l-0.155,0.154 c-10.121,10.123-23.616,15.712-37.972,15.712c-14.354,0-27.849-5.591-38.001-15.741l-80.442-80.441	c-9.055-0.131-30.674-0.278-69.978-0.399l-0.218,37.782l54.62,71.125c7.678,9.999,19.788,15.968,32.394,15.968h334.878 c13.802,0,25.031-11.228,25.031-25.031V415.6c0-13.802-11.228-25.031-25.031-25.031H319.712c-7.928,0-14.354-6.428-14.354-14.354 c0-7.927,6.427-14.354,14.354-14.354h138.545c29.632,0,53.74,24.107,53.74,53.74v0.179C512,445.411,487.892,469.518,458.26,469.518 z" />
+                                    <path style="fill: #ffc61b;" d="M380.414,148.828c-6.648,0-12.615-4.645-14.034-11.41c-1.082-5.165-9.841-51.192,15.796-76.831 c25.64-25.638,71.667-16.882,76.832-15.797c5.577,1.17,9.933,5.526,11.102,11.102c0.164,0.784,3.992,19.417,1.212,39.324 c-1.097,7.852-8.354,13.33-16.202,12.231c-7.852-1.098-13.328-8.351-12.231-16.203c0.999-7.15,0.834-14.242,0.392-19.679 c-12.705-1.021-31.308-0.175-40.805,9.323c-12.564,12.564-9.917,41.493-8,50.637c1.628,7.759-3.343,15.368-11.102,16.996 C382.382,148.729,381.39,148.828,380.414,148.828z" />
+                                </g>
+                                <path style="fill: #fee187;" d="M403.832,136.227c-7.48,3.146-18.028,6.271-24.114,6.271c-6.086,0-16.634-3.125-24.114-6.271 c-16.743-7.044-81.469,0-72.168,60.373c9.302,60.373,11.32,115.714,53.977,115.714c24.704,0,33.72-7.888,42.304-7.888 c8.584,0,17.6,7.888,42.304,7.888c42.657,0,44.677-55.342,53.977-115.714C485.301,136.227,420.574,129.183,403.832,136.227z" />
+                                <path style="fill: #ffc61b;" d="M422.022,326.67c-17.88,0-28.996-3.719-36.353-6.18c-2.254-0.754-5.058-1.692-5.956-1.708 c-0.891,0.017-3.696,0.955-5.95,1.708c-7.357,2.46-18.471,6.18-36.351,6.18c-23.108,0-39.95-12.362-50.06-36.745 c-7.815-18.847-11.318-43.686-15.028-69.984c-0.973-6.9-1.979-14.034-3.078-21.157c-4.222-27.407,4.908-44.836,13.311-54.634 c19.499-22.735,49.751-24.5,58.559-24.5c5.519,0,13.477,0.58,20.05,3.345c7.212,3.035,15.563,5.149,18.547,5.149 s11.336-2.114,18.546-5.147c6.574-2.766,14.534-3.346,20.052-3.346c8.806,0,39.058,1.766,58.559,24.502 c8.403,9.797,17.534,27.228,13.311,54.633c-1.097,7.123-2.103,14.255-3.076,21.154c-3.709,26.297-7.213,51.138-15.028,69.985 C461.973,314.306,445.13,326.67,422.022,326.67z M379.718,290.072c5.521,0,10.371,1.622,15.061,3.192 c6.58,2.201,14.039,4.695,27.243,4.695c22.716,0,28.616-24.995,36.661-82.031c0.986-6.988,2.004-14.212,3.129-21.514 c2.057-13.347-0.208-23.968-6.729-31.571c-9.17-10.69-25.538-14.484-36.767-14.484c-4.988,0-8.016,0.719-8.918,1.1 c-8.106,3.411-20.745,7.394-29.679,7.394s-21.573-3.983-29.681-7.395c-0.903-0.379-3.93-1.098-8.917-1.098 c-11.231,0-27.599,3.794-36.767,14.484c-6.521,7.602-8.785,18.223-6.729,31.571c1.125,7.304,2.145,14.53,3.131,21.517 c8.046,57.033,13.944,82.03,36.661,82.03c13.205,0,20.663-2.495,27.243-4.695C369.347,291.694,374.197,290.072,379.718,290.072z" />
+                            </svg>     
+                        </a>
+                    </div>
+                
+                    <!-- ------search bar on PC & Tablet -->
+                    <div class="col pcw-10 pc-9-6 tb-12 mb-12">
+                        <div class="row header__search-cart">
+                            <div class="col pcw-0 pc-0 tb-0 mb-3 header__icon-mobile--center">
+                                <label for="mobile-search-checkbox" class="header__search-icon-mobile">
+                                    <i class="fas fa-search"></i>
+                                </label>
+                            </div>
+                            <div class="col pcw-0 pc-0 tb-0 mb-6">
+                                <!-- --------------logo on Mobile-------------------- -->
+                                <a href="/" class="header__logo--link">                            
+                                    <svg class="header__logo-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.997 511.997" style="enable-background: new 0 0 511.997 511.997;" xml:space="preserve">
+                                        <g>
+                                            <path style="fill: #ffc61b;" d="M458.26,469.518H123.382c-21.466,0-42.087-10.164-55.163-27.19l-57.619-75.029 c-1.944-2.531-2.989-5.636-2.97-8.825l0.329-57.017c0.046-7.909,6.526-14.307,14.392-14.271c17.05,0.044,41.489,0.122,61.077,0.24 c8.656,0.052,15.987,0.111,21.171,0.174c11.034,0.135,14,0.171,18.239,4.408l84.467,84.467c4.728,4.728,11.014,7.332,17.7,7.332 c6.686,0,12.972-2.604,17.699-7.331l0.155-0.155c9.731-9.731,9.731-25.611-0.029-35.371l-78.995-77.732 c-9.47-9.317-22.002-14.449-35.288-14.449H14.354C6.426,248.768,0,242.34,0,234.414s6.426-14.354,14.354-14.354h114.192	c20.867,0,40.551,8.06,55.424,22.696l79.077,77.814c21.035,21.034,21.035,55.127,0.083,76.081l-0.155,0.154 c-10.121,10.123-23.616,15.712-37.972,15.712c-14.354,0-27.849-5.591-38.001-15.741l-80.442-80.441	c-9.055-0.131-30.674-0.278-69.978-0.399l-0.218,37.782l54.62,71.125c7.678,9.999,19.788,15.968,32.394,15.968h334.878 c13.802,0,25.031-11.228,25.031-25.031V415.6c0-13.802-11.228-25.031-25.031-25.031H319.712c-7.928,0-14.354-6.428-14.354-14.354 c0-7.927,6.427-14.354,14.354-14.354h138.545c29.632,0,53.74,24.107,53.74,53.74v0.179C512,445.411,487.892,469.518,458.26,469.518 z" />
+                                            <path style="fill: #ffc61b;" d="M380.414,148.828c-6.648,0-12.615-4.645-14.034-11.41c-1.082-5.165-9.841-51.192,15.796-76.831 c25.64-25.638,71.667-16.882,76.832-15.797c5.577,1.17,9.933,5.526,11.102,11.102c0.164,0.784,3.992,19.417,1.212,39.324 c-1.097,7.852-8.354,13.33-16.202,12.231c-7.852-1.098-13.328-8.351-12.231-16.203c0.999-7.15,0.834-14.242,0.392-19.679 c-12.705-1.021-31.308-0.175-40.805,9.323c-12.564,12.564-9.917,41.493-8,50.637c1.628,7.759-3.343,15.368-11.102,16.996 C382.382,148.729,381.39,148.828,380.414,148.828z" />
+                                        </g>
+                                        <path style="fill: #fee187;" d="M403.832,136.227c-7.48,3.146-18.028,6.271-24.114,6.271c-6.086,0-16.634-3.125-24.114-6.271 c-16.743-7.044-81.469,0-72.168,60.373c9.302,60.373,11.32,115.714,53.977,115.714c24.704,0,33.72-7.888,42.304-7.888 c8.584,0,17.6,7.888,42.304,7.888c42.657,0,44.677-55.342,53.977-115.714C485.301,136.227,420.574,129.183,403.832,136.227z" />
+                                        <path style="fill: #ffc61b;" d="M422.022,326.67c-17.88,0-28.996-3.719-36.353-6.18c-2.254-0.754-5.058-1.692-5.956-1.708 c-0.891,0.017-3.696,0.955-5.95,1.708c-7.357,2.46-18.471,6.18-36.351,6.18c-23.108,0-39.95-12.362-50.06-36.745 c-7.815-18.847-11.318-43.686-15.028-69.984c-0.973-6.9-1.979-14.034-3.078-21.157c-4.222-27.407,4.908-44.836,13.311-54.634 c19.499-22.735,49.751-24.5,58.559-24.5c5.519,0,13.477,0.58,20.05,3.345c7.212,3.035,15.563,5.149,18.547,5.149 s11.336-2.114,18.546-5.147c6.574-2.766,14.534-3.346,20.052-3.346c8.806,0,39.058,1.766,58.559,24.502 c8.403,9.797,17.534,27.228,13.311,54.633c-1.097,7.123-2.103,14.255-3.076,21.154c-3.709,26.297-7.213,51.138-15.028,69.985 C461.973,314.306,445.13,326.67,422.022,326.67z M379.718,290.072c5.521,0,10.371,1.622,15.061,3.192 c6.58,2.201,14.039,4.695,27.243,4.695c22.716,0,28.616-24.995,36.661-82.031c0.986-6.988,2.004-14.212,3.129-21.514 c2.057-13.347-0.208-23.968-6.729-31.571c-9.17-10.69-25.538-14.484-36.767-14.484c-4.988,0-8.016,0.719-8.918,1.1 c-8.106,3.411-20.745,7.394-29.679,7.394s-21.573-3.983-29.681-7.395c-0.903-0.379-3.93-1.098-8.917-1.098 c-11.231,0-27.599,3.794-36.767,14.484c-6.521,7.602-8.785,18.223-6.729,31.571c1.125,7.304,2.145,14.53,3.131,21.517 c8.046,57.033,13.944,82.03,36.661,82.03c13.205,0,20.663-2.495,27.243-4.695C369.347,291.694,374.197,290.072,379.718,290.072z" />
+                                    </svg>             
+                                </a>
+                            </div>
+                            <div class="col pcw-10 pc-10 tb-10 mb-0">
+                                <div class="header__search">
+                                    <div class="header__search-input-wrap">
+                                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm ...">                                
+                                        <!-- seach history -->
+                                        <div class="header__search-history">
+                                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                            <ul class="header__search-history-list">
+                                                <li class="header__search-history-item">
+                                                    <a href="" class="header__search-history-item-content">Kem dưỡng da</a>
+                                                    <i class="header__search-history-item-remove fas fa-trash"></i>
+                                                </li>
+                                                <li class="header__search-history-item">
+                                                    <a href="" class="header__search-history-item-content">Son môi son môi Son môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môi</a>
+                                                    <i class="header__search-history-item-remove fas fa-trash"></i>
+                                                </li>
+                                                <li class="header__search-history-item">
+                                                    <a href="" class="header__search-history-item-content">Kem trị mụn</a>
+                                                    <i class="header__search-history-item-remove fas fa-trash"></i>
+                                                </li>
+                                            </ul>
+                                            <div class="header__search-history-remove-all">Xóa toàn bộ lịch sử</div>
+                                        </div>
+                                    </div>
+                                    <button class="header__search-btn">
+                                        <i class="header__search-btn-icon fas fa-search"></i>
+                                    </button>
+                                </div>                                 
+                            </div>
+                            <div class="col pcw-2 pc-2 tb-2 mb-3 header__icon-mobile--center">
+                                <!-- -----------cart-icon ------- -->
+                                <div class="header-cart">
+                                    <div class="header-cart__wrap">
+                                        <i class="header_item--hover header-cart__icon fas fa-shopping-cart"></i>
+                                        <div class="header-cart__notice">
+                                            <span class="header-cart__notice-value">555</span>
+                                        </div>
+                                        
+                                        <div class="dropdown-list header-cart__list">
+                                            <!-- no cart case: add class=header-cart__no-cart-->
+                                            <div class="no-cart--wrap">
+                                                <img src="./assets/img/no_cart.png" alt="no cart" class="header-cart__no-cart-img">
+                                                <span class="header-cart__no-cart-message">Chưa có sản phẩm</span>
+                                            </div>
+                                            <!-- has cart case -->
+                                            <div class="has-cart--wrap">
+                                                <h4 class="header-cart__heading">Sản phẩm đã thêm</h4>
+                                                <ul class="header-cart__list-item">
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-1.jfif);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-2.png);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-3.jpg);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-4.jpg);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-5.jpg);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-2.png);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-3.jpg);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-4.jpg);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-5.jpg);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <div class="header-cart__item-img" style="background-image: url(./assets/img/my-pham-2.png);"></div>
+                                                        <div class="header-cart__item-info">
+                                                            <div class="header-cart__item-head">
+                                                                <h5 class="header-cart__item-name">Bộ kem đặc trị vùng mắt Bộ kem đặc trị vùng mắt </h5>
+                                                                <div class="header-cart__item-price-wrap">
+                                                                    <span class="header-cart__item-price">15.000.000đ</span>
+                                                                    <span class="header-cart__item-multiply">x</span>
+                                                                    <span class="header-cart__item-quantity">20</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="header-cart__item-body">
+                                                                <span class="header-cart__item-desciption">Phân loại: Bạc</span>
+                                                                <span class="header-cart__item-remove">Xóa</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <button class="btn btn-primary header-cart__watch-cart">Xem giỏ hàng</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                                       
+                    </div>
+                </div> 
+            </div>
+            <!-- category on mobile and tablet -->
+            <div class="header__category-mobile-table">
+                <ul class="category-mobile-tablet__list">
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Quần áo</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Son môi</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Kem dưỡng da Kem dưỡng da Kem chống nắng</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Sữa rửa mặt</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Trang sức</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Kem chống nắng</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Quần áo</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Son môi</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Kem dưỡng da Kem dưỡng da</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Sữa rửa mặt</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Trang sức</a>
+                    </li>
+                    <li class="category-mobile-tablet__item">
+                        <a href="" class="category-mobile-tablet__link">Kem chống nắng</a>
+                    </li>
+                </ul>            
+            </div>
+
+        </header>        
+
+        <div class="app-container">            
+            <div class="grid wide grid-mobile">  
+                <div class="row">
+                    <div class="col pcw-2 pc-2-4 tb-0 mb-0">
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class="fas fa-list"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="" class="category-item__link category-item__link--active">Quần áo</a>
+                                </li><li class="category-item">
+                                    <a href="" class="category-item__link">Son môi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Kem dưỡng da</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Sữa rửa mặt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Trang sức</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col pcw-10 pc-9-6 tb-12 mb-12">
+
+                        <!-- product arrangement -->
+                        <div class="row">
+                            <div class="col pcw-12 pc-12 tb-12 mb-12">
+                                <div class="product-arrangement">
+                                        <ul class="product-arrangement__list">
+                                            <li class="product-arrangement__item hide-on-mobile-tablet">
+                                                <span class="product-arrangement__text">Sắp xếp theo</span>
+                                            </li>
+                                            <li class="product-arrangement__item product-arrangement__item-2nd">
+                                                <button class="btn btn--primary product-arrangement__btn">Phổ biến</button>
+                                            </li>
+                                            <li class="product-arrangement__item">
+                                                <button class="btn product-arrangement__btn">Mới nhất</button>
+                                            </li>
+                                            <li class="product-arrangement__item">
+                                                <button class="btn product-arrangement__btn">Bán chạy</button>
+                                            </li>
+                                            <li class="product-arrangement__item">
+                                                <div class="selection product-arrangement__selection">
+                                                    <span class="selection__label product-arrangement__selection-label">Giá</span>
+                                                    <i class="selection__icon fas fa-angle-down"></i>
+                                                    <ul class="selection__option">
+                                                        <li class="selection__option-item selection__option-item--active">
+                                                            <span>Thấp đến cao</span>
+                                                            <i class="selection__option-item-check fas fa-check"></i>
+                                                        </li>
+                                                        <li class="selection__option-item">
+                                                            <span>Cao đến thấp</span>
+                                                            <i class="selection__option-item-check fas fa-check"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="product-arrangement__list product-arrangement__list--after hide-on-mobile">
+                                            <li class="product-arrangement__item">
+                                                <span class="product-arrangement__item-page">1</span>
+                                                <span class="product-arrangement__item-page">/</span>
+                                                <span class="product-arrangement__item-page">5</span>
+                                            </li>
+                                            <li class="product-arrangement__item">
+                                                <div class="btn product-arrangement__btn-pagecontrol">
+                                                    <i class="fas fa-angle-left"></i>
+                                                </div>
+                                                <div class="btn product-arrangement__btn-pagecontrol">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product -->
+                        <div class="row row-product">
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-2.png);"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-2.png)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-3.jpg)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-4.jpg)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-5.jpg)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-1.jfif)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-2.png)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-3.jpg)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-4.jpg)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col pcw-2-4 pc-3 tb-4 mb-6">
+                                <a href="/" class="product__wrap-link">
+                                    <div class="product__item">
+                                        <div class="product__item-favorite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="product__item-saleOff">
+                                            <span class="product__item-saleOff-value">15%</span>
+                                            <span class="product__item-saleOff-label">GIẢM</span>
+                                        </div>
+                                        <div class="product__item-img" style="background-image: url(./assets/img/my-pham-5.jpg)"></div>
+                                        <div class="product__item-info">
+                                            <h3 class="product__item-info-name">Bộ sản phẩm trang điểm, chăm sóc sắc đẹp cho phái nữ giá siêu rẻ</h3>
+                                            <div class="product__item-info-saleoff">
+                                                <div class="product__item-info-saleoff-item">Mua để nhận quà</div>
+                                            </div>
+                                            <div class="product__item-info-price">
+                                                <div class="product__item-info-price-wrap">
+                                                    <span class="product__item-info-price-old">5.000.000</span>đ
+                                                    <span class="product__item-info-price-current">4.000.000</span>đ
+                                                </div>
+                                                <div class="product__item-info-free-ship">
+                                                    <img src="./assets/img/free-ship.png" alt="" class="product__item-info-freeship-img">
+                                                </div>
+                                            </div>
+                                            <div class="product__item-info-bought">
+                                                <div class="product__item-info-heart">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product__item-info-solewrap">
+                                                    <div class="product__item-info-fivestar">
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                    <div class="product__item-info-sole">
+                                                        Đã bán<span>1.8</span>k
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product__item-brand-address-wrap">
+                                                <h4 class="product__item-brand-address">New Brand</h4>
+                                                <h4 class="product__item-brand-address">Đà Nẵng</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>  
+
+                        <!-- pagination -->
+                        <div class="row">
+                            <div class="col pcw-12 pc-12 tb-12 mb-12">
+                                <ul class="pagination pagination-in-shop">
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">
+                                            <i class="fas fa-angle-left pagination-item__icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item pagination-item--active">
+                                        <a href="" class="pagination-item__link">1</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">2</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">3</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">4</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">...</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">15</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-item__link">
+                                            <i class="fas fa-angle-right pagination-item__icon"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col pcw-3 pc-3 tb-6 mb-6">
+                        <ul class="footer__list">
+                            <li class="footer__label">
+                                <h4>Footer label 1</h4>                                
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 1</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 2</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col pcw-3 pc-3 tb-6 mb-6">
+                        <ul class="footer__list">
+                            <li class="footer__label">
+                                <h4>Footer label 1</h4>                                
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 1</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 2</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col pcw-3 pc-3 tb-6 mb-6">
+                        <ul class="footer__list">
+                            <li class="footer__label">
+                                <h4>Footer label 1</h4>                                
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 1</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 2</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col pcw-3 pc-3 tb-6 mb-6">
+                        <ul class="footer__list">
+                            <li class="footer__label">
+                                <h4>Footer label 1</h4>                                
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 1</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 2</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Nội dung footer 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    © copyright by Duong Van Tung
+                    <br/>
+                    Phone: 0973819272
+                    <br/>
+                    Email: duongvantungbkdn@gmail.com
+                </div>
+            </div>
+        </footer>
+        
+        <!-- search on mobile -->
+        <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+        <div class="header__search header__search-mobile hide-on-pc">
+            <div class="header__search-input-wrap">
+                <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm ...">                                
+                <!-- seach history -->
+                <div class="header__search-history">
+                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                    <ul class="header__search-history-list">
+                        <li class="header__search-history-item">
+                            <a href="" class="header__search-history-item-content">Kem dưỡng da</a>
+                            <i class="header__search-history-item-remove fas fa-trash"></i>
+                        </li>
+                        <li class="header__search-history-item">
+                            <a href="" class="header__search-history-item-content">Son môi son môi Son môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môiSon môi son môi</a>
+                            <i class="header__search-history-item-remove fas fa-trash"></i>
+                        </li>
+                        <li class="header__search-history-item">
+                            <a href="" class="header__search-history-item-content">Kem trị mụn</a>
+                            <i class="header__search-history-item-remove fas fa-trash"></i>
+                        </li>
+                    </ul>
+                    <div class="header__search-history-remove-all">Xóa toàn bộ lịch sử</div>
+                </div>
+            </div>
+            <button class="header__search-btn">
+                <i class="header__search-btn-icon fas fa-search"></i>
+            </button>
+        </div>
+        <!-- navbar on mobile -->
+        <nav class="navbar-mobile">
+            <ul class="navbar-mobile__list">
+                <li class="navbar-mobile__item navbar-mobile__item--active">
+                    <a href="" class="navbar-mobile__link">
+                        <i class="navbar-mobile__icon far fa-question-circle"></i>
+                        <br/>
+                        <span class="navbar-mobile__label">Trợ giúp</span>
+                    </a>
+                </li>
+                <li class="navbar-mobile__item">
+                    <div class="navbar-mobile__link">
+                        <i class="navbar-mobile__icon fas fa-link"></i>
+                        <br/>
+                        <span class="navbar-mobile__label">Kết nối</span>
+                    </div>
+                </li>
+                <li class="navbar-mobile__item">
+                    <a href="" class="navbar-mobile__link">
+                        <i class="navbar-mobile__icon fas fa-home"></i>
+                        <br/>
+                        <span class="navbar-mobile__label">Home</span>
+                    </a>
+                </li>
+                <li class="navbar-mobile__item">
+                    <div class="navbar-mobile__link">
+                        <i class="navbar-mobile__icon far fa-bell"></i>
+                        <br/>
+                        <span class="navbar-mobile__label">Thông báo</span>
+                    </div>
+                </li>
+                <li class="navbar-mobile__item">
+                    <div class="navbar-mobile__link">
+                        <i class="navbar-mobile__icon far fa-user"></i>
+                        <br/>
+                        <span class="navbar-mobile__label">Tôi</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!------modal------ -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- register form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> & 
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+    
+                    <div class="auth-form__control">
+                        <button class="btn btn__auth-form__control btn__auth-form-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary btn__auth-form__control">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--with-facebook auth-form__socials--btn">
+                        <i class="fab fa-facebook-square auth-form__socials--icon auth-form__socials--icon-facebook"></i>
+                        Kết nối với Facebook
+                    </a>
+                    <a href="" class="btn btn--with-google auth-form__socials--btn">
+                        <img src="./assets/img/google 2.jpg" alt="" class="auth-form__socials--icon auth-form__socials--icon-google">
+                        Kết nối với Google
+                    </a>
+                </div>
+            </div> --> -->
+
+            <!-- login form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <div class="auth-form__aside-item auth-form__forgot-password">Bạn quên mật khẩu</div>
+                        <div class="auth-form__aside-item auth-form__need-help">Bạn cần trợ giúp?</div>
+                    </div>
+    
+                    <div class="auth-form__control">
+                        <button class="btn btn__auth-form__control btn__auth-form-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary btn__auth-form__control">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--with-facebook auth-form__socials--btn">
+                        <i class="fab fa-facebook-square auth-form__socials--icon auth-form__socials--icon-facebook"></i>
+                        Đăng nhập với Facebook
+                    </a>
+                    <a href="" class="btn btn--with-google auth-form__socials--btn">
+                        <img src="./assets/img/google 2.jpg" alt="" class="auth-form__socials--icon auth-form__socials--icon-google">
+                        Đăng nhập với Google
+                    </a>
+                </div>
+            </div> --> -->
+        </div>
+    </div>
+    
+</body>
+</html>

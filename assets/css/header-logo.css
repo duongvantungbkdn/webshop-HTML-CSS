@@ -1,0 +1,19 @@
+.header-logo-search-cart {
+    height: var(--header-logo-search-cart);
+    display: flex;
+    align-items: center;
+}
+
+/* -------------logo--------------- */
+.header-logo-wrapper {
+    text-decoration: none;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__logo-img {
+    width: 150px;
+    color: var(--white-color);
+}

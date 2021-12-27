@@ -1,0 +1,127 @@
+/* ----------dropdown list of notification item--------- */
+.header__navbar-notification{
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 31px;
+    width: 400px;
+    display: none;
+}
+
+.header__navbar-notification::before {
+    right: 16px;
+    cursor: pointer;
+}
+
+.header__navbar-notification::after {
+    width: 25%;
+    cursor: pointer;
+}
+
+/* ---------notification no login--------------- */
+.header__navbar-notification--no-login-wrap {
+    display: none;
+}
+
+.header__navbar-notification--no-login-img {
+    width: 100%;
+    height: auto;
+    padding: 10px 80px 0px 80px;
+}
+
+.header__navbar-notification--no-login-message {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* ---------notification logged in----------------- */
+.header__navbar-notification-headding-content {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 0 6px 16px;
+    text-align: left;
+}
+
+.header__navbar-notification-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 234, 217, 0.8);
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.header__navbar-notification-item {
+    padding: 8px 16px;
+    margin: 8px 0;
+}
+
+.header__navbar-notification-item:last-child {
+    margin-bottom: 0;
+    border-radius: 2px;
+}
+
+.header__navbar-notification-link {
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.header__navbar-notification-img {
+    width: 54px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header__navbar-notification-info {
+    display: inline-block;
+}
+
+.header__navbar-notification-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 0 6px 0;
+    line-height: 1.6rem;
+    max-height: 3.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.header__navbar-notification-description {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6rem;
+    max-height: 3.2rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.header__navbar-notification-item:hover {
+    background-color: #ddd;
+}
+
+.header__navbar-notification--no-login .header__navbar-notification--no-login-wrap {
+    display: block;
+}
+
+.header__navbar-notification--no-login .header__navbar-notification--logged-in-wrap {
+    display: none;
+}
+
+.header__navbar-item-link--notification:hover .header__navbar-notification {
+    display: block;
+}
